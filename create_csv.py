@@ -1,0 +1,16 @@
+import csv
+
+data = [
+    ["student", "jan", "feb", "mar", "apr", "may", "jun"],
+    ["Alice",   85,    90,    78,    92,    88,    76],
+    ["Bob",     72,    88,    95,    80,    70,    85],
+    ["Charlie", 90,    75,    82,    88,    94,    91],
+    ["Diana",   65,    70,    88,    75,    80,    72],
+    ["Eve",     95,    92,    89,    97,    85,    90],
+]
+
+with open("wide_scores.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(data)
+
+print("wide_scores.csv создан!")
